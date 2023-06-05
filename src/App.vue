@@ -1,11 +1,18 @@
 <script setup lang="ts">
-
+import {useRoute,useRouter} from 'vue-router'
+import {onMounted} from "vue";
+const route = useRoute();
+const router = useRouter();
+onMounted(()=>{
+  console.log("我是Appvue的路由信息",route.meta)
+})
 </script>
 
 <template>
   <div style="font-family: '钉钉进步体 Regular',serif;">
-    <Header></Header>
+    <Header v-if="useRoute().meta.isShow"></Header>
     <router-view ></router-view>
+    <Footer v-if="useRoute().meta.isShow"></Footer>
   </div>
 
 </template>
