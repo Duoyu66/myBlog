@@ -27,7 +27,66 @@ const routes = [
     {
         path: '/news',
         name: 'news',
-        component: () => import('../pages/news/index.vue')
+        component: () => import('../pages/news/index.vue'),
+        meta: {isShow: true},
+        children: [
+            {
+                path: 'itnews',
+                name: 'itnews',
+                component: () => import('../pages/news/itNews.vue')
+            },
+            {
+                path: 'doubannews',
+                name: 'doubannews',
+                component: () => import('../pages/news/doubanNews.vue')
+            },
+            {
+                path: 'douyinnews',
+                name: 'douyinnews',
+                component: () => import('../pages/news/douyinNews.vue')
+            },
+            {
+                path: 'weibonews',
+                name: 'weibonews',
+                component: () => import('../pages/news/weiboNews.vue')
+            },
+            {
+                path: 'tiebanews',
+                name: 'tiebanews',
+                component: () => import('../pages/news/tiebaNews.vue')
+            },
+            {
+                path:'historynews',
+                name:'historynews',
+                component:()=>import('../pages/news/historyNews.vue')
+            },
+            {
+                path:'bilibilinews',
+                name:'bilibilinews',
+       component:()=>import('../pages/news/biliNews.vue')
+            },
+            {
+                path:'baidunews',
+                name:'baidunews',
+                component:()=>import('../pages/news/baiduNews.vue')
+            },
+            {
+                path:'zhihunews',
+                name:'zhihunews',
+                component:()=>import('../pages/news/zhihuNews.vue')
+            },
+            {
+                path:'sanliukenews',
+                name:'sanliukenews',
+                component:()=>import('../pages/news/sanliukeNews.vue')
+            },
+            {
+                path:'tigernews',
+                name:'tigernews',
+                component:()=>import('../pages/news/tigerNews.vue')
+            }
+
+        ]
     }
 ]
 const router = createRouter({
