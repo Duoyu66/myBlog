@@ -16,7 +16,6 @@ onMounted(()=>{
 <div class="newsHeader">
   <span class="mainContent">{{itNews.title}}({{itNews.subtitle}})</span>
   <span class="youDing">更新时间:{{itNews.update_time}}</span>
-
 </div>
 
   <ul class="contentGe" v-for="(item) in itNews.data" :key="itNews.index">

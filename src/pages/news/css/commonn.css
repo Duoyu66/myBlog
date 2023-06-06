@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: 35px;
-  background-color: red;
 }
 .mainContent {
   margin-left: calc(50% - 80px);
@@ -15,7 +14,7 @@
 }
 .contentGe {
   width: 100%;
-  border: 1px solid red;
+  border-left: 2px solid red;
 }
 .contentGe li {
   display: flex;

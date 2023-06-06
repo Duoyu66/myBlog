@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <span class="titleNew">新闻大全 • all</span>
   <div class="mainBox">
     <div class="leftRoute">
       <ul>
@@ -271,12 +270,16 @@
 .leftRoute {
   width: 200px;
   height: 100%;
+  margin-top: 50px;
   background-color: #FFFFFF;
+
   .router-link-active {
     text-decoration: none;//去除默认样式
     color: blue;//高亮的颜色
   }
+
   a{
+
     text-decoration: none;
     color: grey;
   }
@@ -289,7 +292,7 @@
   right: 0;
   top: 0;
   width: 1000px;
-  background-color: pink;
+  //background-color: pink;
 }
 
 //每条新闻的样式(左侧)
@@ -321,5 +324,8 @@ a{
 //鼠标移入li显示阴影
 .leftRoute li:hover{
   background-color: 	#DB7093;
+}
+.leftRoute li{
+  border-radius: 15%;
 }
 </style>

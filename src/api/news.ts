@@ -29,3 +29,4 @@ export const reqSanliuNews =()=>requests({url:'https://api.vvhan.com/api/hotlist
 
 //虎扑步行街
 export const reqTigerNews =()=>requests({url:'https://api.vvhan.com/api/hotlist?type=huPu',method:'get'})
+
