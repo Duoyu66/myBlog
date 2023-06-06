@@ -119,7 +119,7 @@ let opacity =ref(0);
   align-items: center;
   width: 100%;
   height: 250px;
-  border: 1px solid red;
+  //border: 1px solid red;
   position: relative;
 }
 

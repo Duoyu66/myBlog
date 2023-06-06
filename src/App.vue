@@ -8,8 +8,9 @@ onMounted(()=>{
 })
 </script>
 
+
 <template>
-  <div style="font-family: '钉钉进步体 Regular',serif;">
+  <div style="font-family: '钉钉进步体 Regular',serif;background-color: #F0EEEE">
     <Header v-if="useRoute().meta.isShow"></Header>
     <router-view ></router-view>
     <Footer v-if="useRoute().meta.isShow"></Footer>
@@ -33,4 +34,5 @@ html, body {
   url("../public/font/DingTalk_JinBuTi_Regular.woff") format("woff");
   font-display: swap;
 }
+
 </style>

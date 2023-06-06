@@ -8,7 +8,7 @@
         <a href="/home">首页</a>
       </li>
       <li>
-        <a href="/news">新闻</a>
+        <a href="/news/itnews">新闻</a>
       </li>
       <li>
         <a href="/moods">心情</a>

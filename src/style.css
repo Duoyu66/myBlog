@@ -73,3 +73,10 @@ a:link:hover{
   clear: both;
   visibility: hidden;
 }
+a {
+  text-decoration: none;
+}
+
+.router-link-active {
+  text-decoration: none;
+}
