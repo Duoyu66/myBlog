@@ -13,7 +13,7 @@ onMounted(()=>{
   <div style="font-family: '钉钉进步体 Regular',serif;background-color: #F0EEEE">
     <Header v-if="useRoute().meta.isShow"></Header>
     <router-view ></router-view>
-    <Footer v-if="useRoute().meta.isShow"></Footer>
+<!--    <Footer v-if="useRoute().meta.isShow"></Footer>-->
   </div>
 
 </template>

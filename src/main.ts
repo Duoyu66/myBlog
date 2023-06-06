@@ -12,5 +12,9 @@ app.component('Footer',Footer)
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 app.use(ElementPlus)
+//pinia
+import {createPinia} from 'pinia'
+const pinia =createPinia()
+app.use(pinia)
 app.use(router)
 app.mount('#app')

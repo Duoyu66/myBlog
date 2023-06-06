@@ -265,8 +265,7 @@
   position: relative;
   margin: 0 auto;
   width: 1200px;
-  //height: 800px;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 .leftRoute {
@@ -281,6 +280,7 @@
     text-decoration: none;
     color: grey;
   }
+  display: inline-block;
 
 }
 
@@ -289,7 +289,6 @@
   right: 0;
   top: 0;
   width: 1000px;
-  height: 100%;
   background-color: pink;
 }
 
