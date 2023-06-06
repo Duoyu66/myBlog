@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import {useRouter} from "vue-router";
 
+const $router = useRouter();
+function goHome(){
+  $router.push({
+    path:'/home'
+  })
+}
 </script>
 
 <template>
@@ -40,7 +47,7 @@
         </div>
       </div>
       <div class="butt">
-        <el-button type="primary">登录</el-button
+        <el-button type="primary" @click="goHome">登录</el-button
         >
         <el-button class="shou" @click="">注册</el-button>
       </div>
