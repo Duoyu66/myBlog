@@ -1,5 +1,14 @@
 import {defineStore} from 'pinia'
-import {reqBaiduNews, reqDoubanNews, reqDouyinNews, reqHistoryNews, reqItNews, reqWeiboNews} from "../api/news.ts";
+import {
+    reqBaiduHot,
+    reqBaiduNews,
+    reqBiliNews,
+    reqDoubanNews,
+    reqDouyinNews,
+    reqHistoryNews,
+    reqItNews, reqSanliuNews, reqTigerNews,
+    reqWeiboNews, reqZhihuNews
+} from "../api/news.ts";
 export const useNews =defineStore('news',{
     state:()=>{
         return {
@@ -14,7 +23,17 @@ export const useNews =defineStore('news',{
             //贴吧
             tiebaNews:{},
             //历史
-            historyNews:{}
+            historyNews:{},
+            //B站
+            biliNews:{},
+            //百度热搜
+            baiduHotNews:{},
+            //知乎
+            zhihuNews:{},
+            //36氪
+            sanliukeNews:{},
+            //虎扑步行街
+            tigerNews:{}
 
         }
     },
@@ -42,6 +61,26 @@ export const useNews =defineStore('news',{
         //历史
         async getHistory(){
             this.historyNews = await reqHistoryNews()
+        },
+        //B站
+        async getBili(){
+            this.biliNews = await reqBiliNews()
+        },
+        //百度热搜
+        async getBaiduHot(){
+            this.baiduHotNews = await reqBaiduHot()
+        },
+        //知乎
+        async getZhihu(){
+            this.zhihuNews = await reqZhihuNews()
+        },
+        //36氪
+        async getSanliuke(){
+            this.sanliukeNews = await  reqSanliuNews();
+        },
+        //虎扑步行街
+        async getTigerNews(){
+            this.tigerNews = await  reqTigerNews()
         }
     },
     getters:{}
