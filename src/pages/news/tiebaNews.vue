@@ -7,13 +7,13 @@ newsMain.getTieba();
 </script>
 
 <template>
-  {{tiebaNews}}
-<!--  <div class="newsHeader">-->
-<!--    <span class="mainContent">{{itNews.title}}({{itNews.subtitle}})</span>-->
-<!--    <span class="youDing">更新时间:{{itNews.update_time}}</span>-->
-<!--  </div>-->
+  <div class="newsHeader">
+    <span class="mainContent">{{tiebaNews.title}}({{tiebaNews.subtitle}})</span>
+    <span class="youDing">更新时间:{{tiebaNews.update_time}}</span>
+  </div>
+  <commonNews :dataObj="tiebaNews"></commonNews>
 </template>
 
 <style scoped>
-
+@import 'css/commonn.css';
 </style>

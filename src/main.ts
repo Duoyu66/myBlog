@@ -4,8 +4,11 @@ import App from './App.vue'
 import router from './router/index.ts'
 const app = createApp(App);
 // Vue.component('header',header);
+//全局注册
 import Header from '../src/components/header/index.vue'
 import Footer from './components/footer/index.vue'
+import commonNews from '../src/pages/news/newsCommon/index.vue'
+app.component('commonNews',commonNews)
 app.component('Header',Header)
 app.component('Footer',Footer)
 // Element-puls

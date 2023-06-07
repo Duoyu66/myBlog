@@ -19,6 +19,7 @@
       <li>
         <a href="/searchList">网站导航</a>
       </li>
+      <a href="/ceshi">测试</a>
 
     </ul>
     <ul class="rightUl">

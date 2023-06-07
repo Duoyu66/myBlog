@@ -11,25 +11,7 @@ newsMain.getTigerNews();
     <span class="mainContent">{{tigerNews.title}}({{tigerNews.subtitle}})</span>
     <span class="youDing">更新时间:{{tigerNews.update_time}}</span>
   </div>
-  <ul class="contentGe" v-for="(item) in tigerNews.data" :key="tigerNews.index">
-    <a :href="item.url" target="_blank">
-      <li>
-        <i v-if="item.index==1">
-          <img class="beforeContent" src="./svg/金牌.svg" alt="">
-        </i>
-        <i v-else-if="item.index==2">
-          <img class="beforeContent" src="./svg/银牌.svg" alt="">
-        </i>
-        <i v-else-if="item.index==3">
-          <img class="beforeContent" src="./svg/铜牌.svg" alt="">
-        </i>
-        <i v-else style="margin-left: 10px">
-          {{item.index}}、
-        </i>
-        <span> {{item.title}}</span>
-      </li>
-    </a>
-  </ul>
+  <commonNews :dataObj="tigerNews"></commonNews>
 </template>
 
 <style scoped>

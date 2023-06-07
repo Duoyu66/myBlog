@@ -87,6 +87,11 @@ const routes = [
             }
 
         ]
+    },
+    {
+        path:'/ceshi',
+        name:'ceshi',
+        component:()=>import('../pages/news/newsCommon/index.vue')
     }
 ]
 const router = createRouter({
